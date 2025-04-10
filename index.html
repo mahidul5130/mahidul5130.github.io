@@ -3,97 +3,112 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md. Mahidul Haque - Laravel Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Md. Mahidul Haque | Laravel Developer</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fa;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
         }
-        .section-title {
-            border-left: 4px solid #0d6efd;
-            padding-left: 10px;
-            margin-bottom: 20px;
+        header, footer {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
         }
         a {
+            color: #2980b9;
             text-decoration: none;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 0.3rem 0.6rem;
+            margin: 0.2rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-<div class="container py-5">
+<header>
+    <h1>Md. Mahidul Haque</h1>
+    <p>Laravel-focused Software Engineer | mahidul5130@gmail.com | <a href="https://linkedin.com/in/md-mahidul-haque" target="_blank">LinkedIn</a> | <a href="https://github.com/mahidul5130" target="_blank">GitHub</a></p>
+</header>
 
-    <!-- Header -->
-    <header class="mb-4 text-center">
-        <h1 class="mb-0">Md. Mahidul Haque</h1>
-        <p class="text-muted">Software Engineer (Laravel)</p>
-        <p>
-            <a href="mailto:mahidul5130@gmail.com">mahidul5130@gmail.com</a> |
-            <a href="tel:+8801705568901">+8801705568901</a> |
-            <a href="https://www.linkedin.com/in/md-mahidul-haque/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/mahidul5130" target="_blank">GitHub</a>
-        </p>
-    </header>
-
-    <!-- Profile -->
-    <section>
-        <h4 class="section-title">Profile</h4>
-        <p>
-            Laravel-focused Software Engineer with 2+ years of experience in backend development, RESTful API design, and scalable application architecture. Experienced in building frontend components with Vue.js, mobile apps using Capacitor, and integrating third-party systems via XML REST APIs using Guzzle.
-        </p>
+<div class="container">
+    <section class="section">
+        <h2>Profile</h2>
+        <p>Laravel-focused Software Engineer with 2+ years of experience in backend development, specializing in RESTful API design and secure, scalable Laravel applications. Proficient in building interactive frontend features with Vue.js and converting web apps into cross-platform mobile apps using Capacitor. Experienced in integrating third-party services by sending XML requests through REST APIs using Guzzle. Contributed to high-impact projects like the Agrani Bank Remittance App, ensuring robust validation, dynamic data handling, and clean code practices.</p>
     </section>
 
-    <!-- Skills -->
-    <section>
-        <h4 class="section-title">Skills</h4>
-        <div class="row">
-            <div class="col-md-6">
-                <strong>Languages:</strong> PHP, JavaScript, TypeScript, Python, SQL<br />
-                <strong>Frameworks:</strong> Laravel, Vue.js, Laravel Nova, Laravel Admin<br />
-                <strong>API:</strong> REST APIs, Postman, Guzzle (XML), Documentation
-            </div>
-            <div class="col-md-6">
-                <strong>DevOps:</strong> .env config, queue workers, backups, Composer<br />
-                <strong>Tools:</strong> Git, GitHub, Firebase, MQTT, Capacitor<br />
-                <strong>Basic:</strong> Redis, Dockerized Laravel, Laravel Sail
-            </div>
+    <section class="section">
+        <h2>Experience</h2>
+        <h3>Engineer, Software Development — Dotlines (Jun 2023 – Present)</h3>
+        <p>Worked on enterprise-level projects using Laravel, Vue.js, and Capacitor. Developed scalable APIs, admin panels, and mobile apps with real-time integrations.</p>
+        <ul>
+            <li><strong>Agrani Bank Remittance App</strong>: REST APIs, Vue.js frontend, XML integration via Guzzle, FPX gateway, PDF receipts, multi-language support</li>
+            <li><strong>Blood Donation App</strong>: Donor registration, search, mobile app using Capacitor, admin dashboard</li>
+            <li><strong>Loyalty Program</strong>: Customer segmentation, category automation, Laravel Blade frontend</li>
+        </ul>
+        <h3>Intern, Automation Team — BRAC Bank (Feb 2023 – May 2023)</h3>
+        <p>Automated internal banking tasks using Python (Selenium, PyAutoGUI). Built document extractors with image processing for scanned forms.</p>
+    </section>
+
+    <section class="section">
+        <h2>Skills</h2>
+        <div>
+            <strong>Languages & Scripting:</strong>
+            <span class="tag">PHP</span> <span class="tag">JavaScript</span> <span class="tag">TypeScript</span> <span class="tag">Python</span> <span class="tag">SQL</span>
+        </div>
+        <div>
+            <strong>Frameworks:</strong>
+            <span class="tag">Laravel</span> <span class="tag">Vue.js</span> <span class="tag">Laravel Nova</span> <span class="tag">Laravel Admin</span>
+        </div>
+        <div>
+            <strong>APIs & Tools:</strong>
+            <span class="tag">REST APIs</span> <span class="tag">Postman</span> <span class="tag">Guzzle</span> <span class="tag">Firebase</span>
+        </div>
+        <div>
+            <strong>DevOps:</strong>
+            <span class="tag">Docker (basic)</span> <span class="tag">Laravel Sail</span> <span class="tag">Composer</span> <span class="tag">.env</span>
+        </div>
+        <div>
+            <strong>Other:</strong>
+            <span class="tag">MQTT</span> <span class="tag">Queue Workers</span> <span class="tag">Redis (basic)</span> <span class="tag">Push Notifications</span> <span class="tag">API Docs</span>
         </div>
     </section>
 
-    <!-- Experience -->
-    <section class="mt-4">
-        <h4 class="section-title">Experience</h4>
-        <h6>Engineer, Software Development — Dotlines (June 2023 – Present)</h6>
-        <p>
-            Working as a Laravel developer, building full-stack web/mobile apps using Laravel, Vue.js, and Capacitor. Developed APIs, admin panels, mobile wrappers, and handled XML data integration for third-party remittance systems.
-        </p>
+    <section class="section">
+        <h2>Education</h2>
         <ul>
-            <li><strong>Agrani Bank Remittance App:</strong> REST APIs, XML over REST, FPX payments, multi-language, SMS/email notifications</li>
-            <li><strong>Blood Donation App:</strong> Donor search, mobile dashboard, Laravel Admin</li>
-            <li><strong>Loyalty Program System:</strong> Tier-based customer rewards, auto-category updates</li>
-        </ul>
-
-        <h6 class="mt-3">Intern, Automation Team — BRAC Bank (Feb 2023 – May 2023)</h6>
-        <p>
-            Automated internal processes using Python, Selenium, and computer vision to extract data from scanned documents.
-        </p>
-    </section>
-
-    <!-- Education -->
-    <section class="mt-4">
-        <h4 class="section-title">Education</h4>
-        <ul>
-            <li><strong>Brac University</strong> — BSc in CSE (2019–2022) | CGPA: 3.67</li>
-            <li><strong>Mirpur Cantonment Public School & College</strong> — HSC (2016–2018) | GPA: 4.83</li>
-            <li><strong>Motijheel Ideal School & College</strong> — SSC (2014–2016) | GPA: 5.00</li>
+            <li><strong>Brac University</strong> — B.Sc. in CSE (2019–2022) | CGPA: 3.67 / 4.00</li>
+            <li><strong>Mirpur Cantonment Public School and College</strong> — HSC (2016–2018) | GPA: 4.83 / 5.00</li>
+            <li><strong>Motijheel Ideal School and College</strong> — SSC (2014–2016) | GPA: 5.00 / 5.00</li>
         </ul>
     </section>
-
-    <!-- Footer -->
-    <footer class="text-center mt-5 text-muted">
-        <small>© 2024 Md. Mahidul Haque | Built with Bootstrap</small>
-    </footer>
-
 </div>
+
+<footer>
+    <p>&copy; 2024 Md. Mahidul Haque. All rights reserved.</p>
+</footer>
 </body>
 </html>
