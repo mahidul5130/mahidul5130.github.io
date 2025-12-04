@@ -264,19 +264,57 @@
             box-shadow: 0 6px 18px rgba(15, 59, 87, 0.15);
         }
 
+        /* CSS to add to your <style> */
         .list-icon.logo {
+            /* remove the gradient background used for SVG icons */
             background: none !important;
             padding: 0;
             border-radius: 0;
             box-shadow: none;
+            display: flex;
+            align-items: center; /* center vertically with list body */
+            justify-content: center;
         }
 
-        .list-icon.logo img {
-            width: 44px;
-            height: 44px;
-            object-fit: contain;
-            border-radius: 8px;
+        /* wrapper to control layout of multiple logos */
+        .list-icon.logo .logos {
+            display: flex;
+            flex-direction: column; /* stacked by default */
+            gap: 6px;               /* spacing between logos */
+            align-items: center;
+            justify-content: center;
         }
+
+        /* If you prefer them side-by-side, use .logos.row */
+        .list-icon.logo .logos.row {
+            flex-direction: row;
+        }
+
+        /* logo image sizing (keeps aspect ratio, supports PNG/SVG) */
+        .list-icon.logo img {
+            max-width: 44px;
+            max-height: 44px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            border-radius: 8px; /* optional */
+            background: transparent;
+        }
+
+        /* slightly smaller second logo if needed */
+        .list-icon.logo img + img {
+            max-width: 36px;
+            max-height: 36px;
+        }
+
+        /* mobile tweak */
+        @media (max-width: 600px) {
+            .list-icon.logo .logos { gap: 4px; }
+            .list-icon.logo img { max-width: 40px; max-height: 40px; }
+            .list-icon.logo img + img { max-width: 32px; max-height: 32px; }
+        }
+
 
         .list-body {
             flex: 1
@@ -411,9 +449,14 @@
 
                     <!-- Experience item 1 -->
                     <div class="list-item" aria-label="Software Engineer — SSD-TECH">
-                        <div class="list-icon logo">
-                            <img src="/logo/company/ssd-tech.png" alt="SSD-TECH">
+                        <!-- HTML: two logos stacked (clean, accessible) -->
+                        <div class="list-icon logo" aria-hidden="false">
+                            <div class="logos">
+                                <img src="/logo/company/ssd-tech.png" alt="SSD-TECH logo" />
+                                <img src="/logo/company/dotlines.svg" alt="Dotlines logo" />
+                            </div>
                         </div>
+
 
                         <div class="list-body">
                             <div class="item-title">Software Engineer (Laravel) — SSD-TECH / Dotlines</div>
