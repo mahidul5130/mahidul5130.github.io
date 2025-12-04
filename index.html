@@ -8,193 +8,204 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root{
-            --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#60a5fa; --glass: rgba(255,255,255,0.03);
-            --glass-2: rgba(255,255,255,0.02);
-            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-        }
+        :root{--bg:#0b1220;--card:#071528;--muted:#9fb0c6;--accent:#20a4f3;--glass:rgba(255,255,255,0.03);font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
         *{box-sizing:border-box}
-        html,body{height:100%;margin:0;background:linear-gradient(180deg,#071028 0%, #071936 100%);color:#e6eef6}
-        .container{max-width:980px;margin:36px auto;padding:28px}
+        html,body{height:100%;margin:0;background:linear-gradient(180deg,#041125 0%, #081827 100%);color:#eaf6ff}
+        a{color:var(--accent)}
 
-        header{display:flex;gap:20px;align-items:center}
-        .avatar{width:110px;height:110px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042c54}
-        h1{margin:0;font-size:24px}
-        .sub{color:var(--muted);margin-top:6px;font-size:14px}
+        .wrap{max-width:1100px;margin:32px auto;padding:28px}
+        .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
 
-        .topgrid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
-        .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+        .header{display:flex;gap:20px;align-items:center}
+        .photo{width:128px;height:128px;border-radius:14px;overflow:hidden;flex-shrink:0;border:2px solid rgba(255,255,255,0.06)}
+        .photo img{width:100%;height:100%;object-fit:cover;display:block}
+        .title{flex:1}
+        h1{margin:0;font-size:28px}
+        .role{color:var(--muted);margin-top:6px}
 
-        .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-        .section-title h3{margin:0}
-        .muted{color:var(--muted);font-size:13px}
+        .cta{margin-top:12px;display:flex;gap:10px;align-items:center}
+        .btn{background:linear-gradient(90deg,var(--accent),#46c3ff);color:#05243a;padding:8px 12px;border-radius:10px;font-weight:600;text-decoration:none}
+        .ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none}
+
+        .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:20px}
+
+        .section{margin-bottom:18px}
+        .section h2{margin:0 0 10px 0;font-size:18px}
+        .muted{color:var(--muted);font-size:14px}
 
         .skills{display:flex;flex-wrap:wrap;gap:8px}
         .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
 
-        .experience-item{margin-bottom:14px}
-        .exp-head{display:flex;justify-content:space-between;gap:8px}
-        .company{font-weight:600}
-        .role{color:var(--muted);font-size:13px}
-        .bullet{margin:6px 0 6px 16px;color:#dbe9ff}
+        .experience{display:flex;flex-direction:column;gap:12px}
+        .exp{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00))}
+        .exp .company{font-weight:700}
+        .exp .meta{color:var(--muted);font-size:13px;margin-top:6px}
+        .exp ul{margin:8px 0 0 18px}
+        .exp li{margin-bottom:6px}
 
-        .projects{display:grid;grid-template-columns:1fr;gap:12px}
-        .project-title{font-weight:700}
-        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        .projects .proj{padding:12px;border-radius:10px;background:var(--glass);}
 
-        footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+        .right .card {padding:16px}
+        .contact-list{list-style:none;padding:0;margin:8px 0 0 0}
+        .contact-list li{margin-bottom:8px}
 
-        /* responsive */
-        @media (max-width:880px){.topgrid{grid-template-columns:1fr} .avatar{width:86px;height:86px}}
+        footer{margin-top:20px;color:var(--muted);text-align:center;font-size:13px}
+
+        @media (max-width:980px){.grid{grid-template-columns:1fr}.photo{width:96px;height:96px}}
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="avatar">MH</div>
-        <div>
+<div class="wrap">
+    <div class="card header">
+        <div class="photo"><img src="/profile.jpg" alt="Md. Mahidul Haque"></div>
+        <div class="title">
             <h1>Md. Mahidul Haque</h1>
-            <div class="sub">Full-Stack Software Engineer — Laravel & Vue.js | Dhaka, Bangladesh</div>
-            <div style="margin-top:8px" class="muted">mahidul5130@gmail.com • +8801705568901 • <a href="https://mahidul5130.github.io" style="color:var(--accent);text-decoration:none">mahidul5130.github.io</a> • <a href="https://github.com/mahidul5130" style="color:var(--accent);text-decoration:none">github.com/mahidul5130</a> • <a href="https://www.linkedin.com/in/md-mahidul-haque" style="color:var(--accent);text-decoration:none">linkedin.com/in/md-mahidul-haque</a></div>
+            <div class="role">Full-Stack Software Engineer — Laravel, Vue.js • Dhaka, Bangladesh</div>
+            <div class="muted" style="margin-top:8px">mahidul5130@gmail.com • +8801705568901</div>
+
+            <div class="cta">
+                <!-- Prominent GitHub link as requested -->
+                <a class="btn" href="https://github.com/mahidul5130" target="_blank" rel="noopener">View GitHub • @mahidul5130</a>
+                <a class="ghost" href="/MdMahidulHaque_01705568901.pdf" target="_blank">Download CV (PDF)</a>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <div class="topgrid">
-        <main class="card">
-            <section id="summary">
-                <div class="section-title"><h3>Summary</h3><div class="muted">2.5+ years • Backend-focused</div></div>
-                <p class="muted">Full-Stack Software Engineer with 2.5+ years specialising in Laravel backend development, REST APIs, and third-party integrations. Strong Vue.js skills and experience building production-grade apps for banks and fintechs.</p>
-            </section>
+    <div class="grid">
+        <main>
+            <div class="card section">
+                <h2>Summary</h2>
+                <p class="muted">Full-Stack Software Engineer with 2.5+ years specialising in Laravel backend development, REST APIs, and third-party integrations. Strong Vue.js skills and experience building production-grade apps for banks and fintechs. Seeking backend-focused full-stack roles building secure, scalable applications.</p>
+            </div>
 
-            <section id="experience" style="margin-top:16px">
-                <div class="section-title"><h3>Experience</h3></div>
-
-                <div class="experience-item">
-                    <div class="exp-head"><div>
+            <div class="card section">
+                <h2>Experience</h2>
+                <div class="experience">
+                    <div class="exp">
                         <div class="company">Software Engineer (Laravel) — Systems Solutions & Development Technologies (SSD-TECH) / Dotlines</div>
-                        <div class="role">June 2023 - Present — Gulshan-1, Dhaka, Bangladesh</div>
-                    </div><div class="muted">Full-time</div></div>
-                    <ul>
-                        <li class="bullet">Developed and maintained 3+ full Laravel–Vue applications, handling backend logic, API design, queues, schedulers, and third-party integrations.</li>
-                        <li class="bullet">Optimized and enhanced 5+ additional systems through bug fixing, performance tuning, and new module integrations.</li>
-                        <li class="bullet">Delivered secure, scalable Laravel APIs with middleware, policy-based authorisation, request validation, and real-time updates via Firebase/MQTT/MySQL.</li>
-                    </ul>
-                </div>
+                        <div class="meta">June 2023 - Present • Gulshan-1, Dhaka, Bangladesh</div>
+                        <ul>
+                            <li>Developed and maintained 3+ full Laravel–Vue applications, handling backend logic, API design, queues, schedulers, and third‑party integrations.</li>
+                            <li>Optimized and enhanced 5+ additional systems through bug fixes, performance tuning, and module integrations.</li>
+                            <li>Integrated Agrani Bank’s XML/SOAP APIs and FPX payment gateway; built robust XML payloads and automated data syncs.</li>
+                            <li>Implemented device binding, OTP verification, cross-device session sync, and real-time updates via Firebase and MQTT.</li>
+                            <li>Designed modular backend architecture using service classes, repository pattern, and validation layers.</li>
+                        </ul>
+                    </div>
 
-                <div class="experience-item">
-                    <div class="exp-head"><div>
+                    <div class="exp">
                         <div class="company">Intern, Automation Team — BRAC Bank Limited</div>
-                        <div class="role">February 2023 - May 2023 — Tejgaon, Dhaka, Bangladesh</div>
-                    </div><div class="muted">Internship</div></div>
+                        <div class="meta">February 2023 - May 2023 • Tejgaon, Dhaka, Bangladesh</div>
+                        <ul>
+                            <li>Automated internal banking workflows with Python, Selenium, and PyAutoGUI—reduced manual form-handling time by 70%.</li>
+                            <li>Built a computer-vision tool to extract passport/ID photos from scanned documents (PDF/TIFF), improving processing speed by 50%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card section projects">
+                <h2>Projects</h2>
+
+                <div class="proj" style="margin-bottom:10px">
+                    <div style="font-weight:700">Agrani Bank Remittance App</div>
+                    <div class="muted">June 2024 - Present — SSD-TECH / Dotlines</div>
                     <ul>
-                        <li class="bullet">Automated internal banking workflows using Python, Selenium, and PyAutoGUI, reducing manual form-handling time by 70%.</li>
-                        <li class="bullet">Built a computer-vision tool to extract passport/ID photos from scanned documents (PDF/TIFF), improving processing speed by 50%.</li>
+                        <li>Developed scalable Laravel REST APIs for remitter registration, beneficiary handling, and transaction workflows supporting tens of thousands of active users.</li>
+                        <li>Integrated XML/SOAP bank APIs and FPX; automated verifications and reduced manual checks by 30%.</li>
                     </ul>
                 </div>
 
-            </section>
-
-            <section id="projects" style="margin-top:16px">
-                <div class="section-title"><h3>Projects</h3><div class="muted">Selected highlights</div></div>
-                <div class="projects">
-                    <div class="card" style="background:var(--glass-2);padding:12px">
-                        <div class="project-title">Agrani Bank Remittance App</div>
-                        <div class="muted" style="font-size:13px;margin-top:6px">June 2024 - Present — SSD-TECH / Dotlines</div>
-                        <ul>
-                            <li class="bullet">Developed scalable REST APIs in Laravel for remitter registration, beneficiary handling, and transaction workflows, supporting tens of thousands of active users.</li>
-                            <li class="bullet">Integrated Agrani Bank’s XML/SOAP APIs and FPX payment gateway; automated data syncs and reduced manual verification by 30%.</li>
-                            <li class="bullet">Implemented push notifications, device binding, OTP verification, and cross-device session sync using Firebase and MQTT.</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background:var(--glass-2);padding:12px">
-                        <div class="project-title">Laopay (MFS Application)</div>
-                        <div class="muted" style="font-size:13px;margin-top:6px">May 2025 - Present — SSD-TECH / Dotlines</div>
-                        <ul>
-                            <li class="bullet">Resolved critical bugs and optimized wallet APIs, improving accuracy and cutting errors by 30%.</li>
-                            <li class="bullet">Delivered real-time communication—multilingual Vue.js components, device binding, Firebase alerts, and MQTT channels—supporting 50k+ users.</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background:var(--glass-2);padding:12px">
-                        <div class="project-title">Blood Donation App</div>
-                        <div class="muted" style="font-size:13px;margin-top:6px">June 2023 - Present — SSD-TECH / Dotlines</div>
-                        <ul>
-                            <li class="bullet">Built a full-stack Blood Donation App using Laravel REST APIs and Vue.js/Capacitor for 1,000+ users with multilingual support and secure device binding.</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background:var(--glass-2);padding:12px">
-                        <div class="project-title">Loyalty Program System</div>
-                        <div class="muted" style="font-size:13px;margin-top:6px">June 2023 - Present — SSD-TECH / Dotlines</div>
-                        <ul>
-                            <li class="bullet">Built a full‑stack Loyalty Program system for partner organisations to register customers, onboard users, and manage loyalty tiers with automated updates based on transaction activity.</li>
-                            <li class="bullet">Developed frontend interfaces using Laravel Blade and implemented backend logic with Eloquent ORM and structured REST APIs across multiple system modules.</li>
-                            <li class="bullet">Implemented a real-time notification module to alert users of tier upgrades, reward availability, and account changes across the platform.</li>
-                            <li class="bullet">Designed secure user management, transaction tracking, and configurable tier-rule settings to support various business workflows.</li>
-                        </ul>
-                    </div>
-
+                <div class="proj" style="margin-bottom:10px">
+                    <div style="font-weight:700">Laopay (MFS Application)</div>
+                    <div class="muted">May 2025 - Present — SSD-TECH / Dotlines</div>
+                    <ul>
+                        <li>Optimized wallet APIs, improved accuracy, and integrated real-time channels supporting 50k+ users with <100ms latency.</li>
+                    </ul>
                 </div>
-            </section>
 
-            <section id="education" style="margin-top:16px">
-                <div class="section-title"><h3>Education</h3></div>
-                <div class="muted">Bachelor of Science in Computer Science and Engineering — Brac University (3.67 / 4.00) — 2022</div>
-                <div class="muted" style="margin-top:6px">Higher Secondary Certificate — Mirpur Cantonment Public School and College (4.83 / 5.00) — 2018</div>
-                <div class="muted" style="margin-top:6px">Secondary School Certificate — Motijheel Ideal School and College (5.00 / 5.00) — 2016</div>
-            </section>
+                <div class="proj" style="margin-bottom:10px">
+                    <div style="font-weight:700">Blood Donation App</div>
+                    <div class="muted">June 2023 - Present — SSD-TECH / Dotlines</div>
+                    <ul>
+                        <li>Full-stack Laravel & Vue.js/Capacitor app for donor registration, live search, and donation workflows with multilingual support.</li>
+                    </ul>
+                </div>
 
+                <div class="proj">
+                    <div style="font-weight:700">Loyalty Program System</div>
+                    <div class="muted">June 2023 - Present — SSD-TECH / Dotlines</div>
+                    <ul>
+                        <li>Built a full-stack Loyalty Program system for partner organisations to register customers, onboard users, and manage loyalty tiers with automated updates based on transaction activity.</li>
+                        <li>Frontend with Laravel Blade; backend using Eloquent and structured REST APIs across modules.</li>
+                        <li>Real-time notifications for tier upgrades, rewards, and account changes. Designed secure user management, transaction tracking, and configurable rules.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card section">
+                <h2>Education</h2>
+                <div class="muted">B.Sc. in Computer Science & Engineering — Brac University (3.67 / 4.00), 2022</div>
+                <div class="muted" style="margin-top:6px">HSC — Mirpur Cantonment Public School and College (4.83 / 5.00), 2018</div>
+                <div class="muted" style="margin-top:6px">SSC — Motijheel Ideal School and College (5.00 / 5.00), 2016</div>
+            </div>
         </main>
 
-        <aside>
+        <aside class="right">
             <div class="card">
-                <div class="section-title"><h3>Skills</h3></div>
+                <h2>Skills</h2>
+                <div class="muted" style="margin-bottom:8px">(extracted from CV — arranged for clarity)</div>
+
+                <div style="margin-bottom:8px"><strong>Backend & APIs</strong></div>
                 <div class="skills" style="margin-bottom:12px">
-                    <span class="skill">PHP</span><span class="skill">Laravel</span><span class="skill">REST APIs</span><span class="skill">MySQL</span>
-                    <span class="skill">Vue.js</span><span class="skill">JavaScript</span><span class="skill">TypeScript</span><span class="skill">Docker</span>
-                    <span class="skill">Redis</span><span class="skill">Firebase</span><span class="skill">MQTT</span><span class="skill">FPX</span>
+                    <span class="skill">PHP</span><span class="skill">Laravel</span><span class="skill">RESTful APIs</span><span class="skill">Passport</span><span class="skill">Sanctum</span><span class="skill">XML</span>
                 </div>
 
-                <div style="margin-top:8px">
-                    <div class="section-title"><h3>Tools & Dev</h3></div>
-                    <div class="muted">Composer, npm, Postman, Git, GitHub, PHPUnit, Queues, Scheduler</div>
+                <div style="margin-bottom:8px"><strong>Frontend & Mobile</strong></div>
+                <div class="skills" style="margin-bottom:12px">
+                    <span class="skill">Vue.js</span><span class="skill">Vue Router</span><span class="skill">Vuex</span><span class="skill">JavaScript</span><span class="skill">TypeScript</span><span class="skill">Blade</span><span class="skill">Capacitor</span>
                 </div>
 
-                <div style="margin-top:12px">
-                    <div class="section-title"><h3>Contact</h3></div>
-                    <div class="muted">Dhaka, Bangladesh</div>
-                    <div style="margin-top:6px"><a href="mailto:mahidul5130@gmail.com" style="color:var(--accent);text-decoration:none">mahidul5130@gmail.com</a></div>
-                    <div style="margin-top:6px"><a href="tel:+8801705568901" style="color:var(--accent);text-decoration:none">+8801705568901</a></div>
+                <div style="margin-bottom:8px"><strong>Database & DevOps</strong></div>
+                <div class="skills" style="margin-bottom:12px">
+                    <span class="skill">MySQL</span><span class="skill">Query Optimisation</span><span class="skill">Indexing</span><span class="skill">Redis</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">Docker</span><span class="skill">Composer</span><span class="skill">npm</span><span class="skill">Postman</span>
                 </div>
 
-                <div style="margin-top:12px">
-                    <div class="section-title"><h3>Download CV</h3></div>
-                    <div><a href="/MdMahidulHaque_01705568901.pdf" style="color:var(--accent);text-decoration:none">Download PDF</a></div>
+                <div style="margin-bottom:8px"><strong>Architecture, Testing & Processing</strong></div>
+                <div class="skills" style="margin-bottom:12px">
+                    <span class="skill">Clean Architecture</span><span class="skill">MVC</span><span class="skill">Service Classes</span><span class="skill">Repository Pattern</span><span class="skill">PHPUnit</span><span class="skill">API Testing</span><span class="skill">Logging</span>
+                    <span class="skill">Laravel Queues</span><span class="skill">Workers</span><span class="skill">Scheduler</span><span class="skill">Notifications</span><span class="skill">Firebase</span><span class="skill">FCM</span><span class="skill">MQTT</span><span class="skill">FPX Integration</span><span class="skill">PDF Generation</span><span class="skill">API Documentation</span>
                 </div>
+
+                <div class="section" style="margin-top:6px">
+                    <h2>Contact</h2>
+                    <ul class="contact-list">
+                        <li><a href="mailto:mahidul5130@gmail.com">mahidul5130@gmail.com</a></li>
+                        <li><a href="tel:+8801705568901">+8801705568901</a></li>
+                        <li><a href="https://linkedin.com/in/md-mahidul-haque" target="_blank">linkedin.com/in/md-mahidul-haque</a></li>
+                        <li><a href="https://github.com/mahidul5130" target="_blank">github.com/mahidul5130 (primary)</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div style="height:18px"></div>
+            <div style="height:14px"></div>
 
             <div class="card">
-                <div class="section-title"><h3>Quick Links</h3></div>
-                <ul style="padding-left:18px;margin:0;color:var(--muted);font-size:13px">
-                    <li style="margin-bottom:6px"><a href="#projects" style="color:var(--accent);text-decoration:none">Projects</a></li>
-                    <li style="margin-bottom:6px"><a href="#experience" style="color:var(--accent);text-decoration:none">Experience</a></li>
-                    <li style="margin-bottom:6px"><a href="#education" style="color:var(--accent);text-decoration:none">Education</a></li>
+                <h2>Quick Links</h2>
+                <ul style="padding-left:18px;margin:0;color:var(--muted);font-size:14px">
+                    <li style="margin-bottom:8px"><a href="#projects">Projects</a></li>
+                    <li style="margin-bottom:8px"><a href="#experience">Experience</a></li>
+                    <li style="margin-bottom:8px"><a href="#education">Education</a></li>
                 </ul>
             </div>
-
         </aside>
     </div>
 
-    <footer>
-        <div>© <span id="year"></span> Md. Mahidul Haque — Built with HTML &amp; CSS • Hosted on GitHub Pages</div>
-    </footer>
+    <footer>© <span id="year"></span> Md. Mahidul Haque — Hosted on GitHub Pages</footer>
 </div>
 
-<script>
-    document.getElementById('year').innerText = new Date().getFullYear();
-</script>
+<script>document.getElementById('year').innerText = new Date().getFullYear();</script>
 </body>
 </html>
