@@ -1,136 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Md. Mahidul Haque — Portfolio & CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
-        body { background: #f8f9fa; }
-        .profile-img { width:150px; height:150px; object-fit:cover; }
-        .card-title-small { font-size: 0.95rem; font-weight:600; }
-        .project-badge { font-size: 0.78rem; }
-        @media (max-width: 991px) {
-            .sidebar-sticky { position: static !important; }
+        :root{
+            --accent:#0d6efd;
+            --muted:#6c757d;
         }
+        body{ background:#f8f9fa; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+        .profile-img{ width:150px; height:150px; object-fit:cover; border-radius:50%; }
+        .card-title-compact{ font-size:1rem; font-weight:600; }
+        .small-muted{ color:var(--muted); font-size:0.9rem; }
+        .section-title{ font-size:1.05rem; font-weight:700; margin-bottom:.75rem; }
+        a.text-link{ color:var(--accent); text-decoration:none; }
+        a.text-link:hover{ text-decoration:underline; }
+        .list-compact li{ margin-bottom:.4rem; }
+        @media (max-width:991px){ aside{ order:2 } main{ order:1 } }
     </style>
 </head>
 <body>
 <div class="container py-4">
     <div class="row g-4">
+
         <!-- Sidebar -->
         <aside class="col-lg-4">
             <div class="card shadow-sm">
                 <div class="card-body text-center">
-                    <img src="profile.jpg" alt="Profile" class="rounded-circle profile-img mb-3" />
+                    <img src="profile.jpg" alt="Md. Mahidul Haque" class="profile-img mb-3" />
                     <h3 class="mb-0">Md. Mahidul Haque</h3>
-                    <p class="text-muted mb-1">Software Engineer (Laravel)</p>
-                    <span class="badge bg-primary">Full-Stack / Backend-focused</span>
+                    <div class="small-muted">Dhaka, Bangladesh</div>
+                    <div class="mt-2"><span class="badge bg-primary">Software Engineer (Laravel)</span></div>
                 </div>
 
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="bi bi-telephone me-2"></i><strong>Phone:</strong>
-                        <a href="tel:+8801705568901" class="text-decoration-none ms-1">+8801705568901</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-envelope me-2"></i><strong>Email:</strong>
-                        <a href="mailto:mahidul5130@gmail.com" class="text-decoration-none ms-1">mahidul5130@gmail.com</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-geo-alt me-2"></i><strong>Address:</strong>
-                        <a href="https://maps.app.goo.gl/bxJmokwYmmumJgqq6" target="_blank" class="text-decoration-none ms-1">Flat-D6, Shahjadpur, Gulshan, Dhaka</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-linkedin me-2"></i><strong>LinkedIn:</strong>
-                        <a href="https://www.linkedin.com/in/md-mahidul-haque/" target="_blank" class="text-decoration-none ms-1">linkedin.com/in/md-mahidul-haque</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-github me-2"></i><strong>GitHub:</strong>
-                        <a href="https://github.com/mahidul5130" target="_blank" class="text-decoration-none ms-1">github.com/mahidul5130</a></li>
+                    <li class="list-group-item">
+                        <i class="bi bi-telephone me-2"></i><strong>Phone:</strong>
+                        <a href="tel:+8801705568901" class="text-link ms-1">+8801705568901</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-envelope me-2"></i><strong>Email:</strong>
+                        <a href="mailto:mahidul5130@gmail.com" class="text-link ms-1">mahidul5130@gmail.com</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-geo-alt me-2"></i><strong>Address:</strong>
+                        <a href="https://maps.app.goo.gl/bxJmokwYmmumJgqq6" target="_blank" class="text-link ms-1">Flat-D6, Ga-40/5, Shahjadpur, Gulshan, Dhaka-1212</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-linkedin me-2"></i><strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/md-mahidul-haque/" target="_blank" class="text-link ms-1">linkedin.com/in/md-mahidul-haque</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-github me-2"></i><strong>GitHub:</strong>
+                        <a href="https://github.com/mahidul5130" target="_blank" class="text-link ms-1">github.com/mahidul5130</a>
+                    </li>
                 </ul>
 
                 <div class="card-body">
-                    <h6 class="card-title-small mb-2"><i class="bi bi-tools me-2"></i>Skills</h6>
-                    <ul class="small">
-                        <li><strong>Languages & Scripting:</strong> PHP, JavaScript, TypeScript, Python, SQL</li>
-                        <li><strong>Frameworks:</strong> Laravel, Vue.js, Blade, Capacitor</li>
-                        <li><strong>APIs & Integration:</strong> REST, XML/SOAP (Guzzle), FPX</li>
-                        <li><strong>Realtime & Mobile:</strong> Firebase, MQTT, FCM</li>
-                        <li><strong>DB & DevOps:</strong> MySQL, Redis, Docker, Composer, npm</li>
-                        <li><strong>Patterns & Testing:</strong> Service classes, Repository pattern, PHPUnit</li>
+                    <div class="section-title"><i class="bi bi-tools me-2"></i>Skills</div>
+                    <ul class="list-unstyled small list-compact">
+                        <li><strong>Backend & APIs:</strong> PHP, Laravel, RESTful APIs, Passport, Sanctum, XML</li>
+                        <li><strong>Frontend & Mobile:</strong> Vue.js, Vue Router, Vuex, JavaScript, TypeScript, Blade, Capacitor</li>
+                        <li><strong>Database & DevOps:</strong> MySQL, Query Optimisation, Indexing, Redis, Docker, Composer, npm</li>
+                        <li><strong>Realtime & Notifications:</strong> Firebase, FCM, MQTT</li>
+                        <li><strong>Patterns & Testing:</strong> Service Classes, Repository Pattern, PHPUnit, API Testing</li>
+                        <li><strong>Other:</strong> Postman, Logging, Laravel Queues & Scheduler, FPX Integration, PDF Generation</li>
                     </ul>
 
-                    <h6 class="card-title-small mt-3 mb-2"><i class="bi bi-mortarboard me-2"></i>Education</h6>
-                    <div class="small text-muted">
-                        <strong>Brac University</strong><br/>BSc in CSE — CGPA: 3.67 (2022)<br/><br/>
-                        <strong>Mirpur Cantonment Public School & College</strong><br/>HSC — GPA: 4.83 (2018)<br/><br/>
-                        <strong>Motijheel Ideal School & College</strong><br/>SSC — GPA: 5.00 (2016)
+                    <div class="section-title mt-3"><i class="bi bi-mortarboard me-2"></i>Education</div>
+                    <div class="small-muted">
+                        <strong>Bachelor of Science in Computer Science and Engineering</strong><br/>
+                        Brac University — CGPA: 3.67 / 4.00 (2022)<br/><br/>
+
+                        <strong>Higher Secondary Certificate (Science)</strong><br/>
+                        Mirpur Cantonment Public School and College — GPA: 4.83 / 5.00 (2018)<br/><br/>
+
+                        <strong>Secondary School Certificate (Science)</strong><br/>
+                        Motijheel Ideal School and College — GPA: 5.00 / 5.00 (2016)
                     </div>
                 </div>
             </div>
         </aside>
 
-        <!-- Main content -->
+        <!-- Main -->
         <main class="col-lg-8">
             <div class="card shadow-sm mb-4">
                 <div class="card-body">
-                    <h4 class="card-title"><i class="bi bi-person-lines-fill me-2"></i>Profile Summary</h4>
+                    <h4 class="card-title"><i class="bi bi-person-lines-fill me-2"></i>Summary</h4>
                     <p class="mb-0">
-                        Full-Stack Software Engineer with <strong>2.5+ years</strong> experience, specializing in Laravel backend development, RESTful API design,
-                        and Vue.js frontend work. Experienced in building scalable secure systems, integrating third-party services (including XML/SOAP), and
-                        delivering mobile-enabled solutions with Capacitor. Contributed to high-impact projects such as the Agrani Bank Remittance App and Laopay (MFS),
-                        focusing on performance, reliability, and clean architecture.
+                        Full-Stack Software Engineer with <strong>2.5+ years</strong> specialising in Laravel backend development, REST APIs, and third-party integrations, with strong Vue.js skills and seeking a backend-focused full-stack role building scalable, secure applications.
                     </p>
                 </div>
             </div>
 
-            <!-- Experience -->
             <section class="card shadow-sm mb-4">
                 <div class="card-body">
                     <h4 class="card-title"><i class="bi bi-briefcase-fill me-2"></i>Experience</h4>
 
+                    <!-- Dotlines -->
                     <div class="mb-4">
-                        <h5 class="mb-0">Systems Solutions & Development Technologies (Dotlines)</h5>
-                        <div class="small text-muted mb-2">Jun 2023 — Present — Gulshan-1, Dhaka</div>
-                        <p class="mb-2"><strong>Position:</strong> Software Engineer (Laravel)</p>
+                        <h5 class="mb-1">Software Engineer (Laravel)</h5>
+                        <div class="small-muted mb-2">Systems Solutions & Development Technologies (SSD-TECH) / Dotlines — Jun 2023 - Present, Gulshan-1, Dhaka, Bangladesh</div>
 
-                        <ul>
+                        <p class="mb-2">
+                            Developed and maintained multiple full-stack applications (Laravel backend + Vue.js frontend), handling backend logic, API design, queues, schedulers, and third-party integrations.
+                        </p>
+
+                        <ul class="list-compact">
                             <li>
-                                <strong>Agrani Bank Remittance App (Remittance Solution)</strong><br/>
-                                Built scalable Laravel REST APIs for remitter registration, beneficiary handling, and transaction workflows for remitters in Malaysia (MYR → BDT).
-                                Integrated Agrani Bank’s XML-based APIs, FPX payment gateway, multilingual Vue.js frontend, real-time rate updates, OTP & device binding, and PDF receipt generation.
-                                <div class="mt-1"><small>Demo: <a href="https://agrani-app.dotlines.com.sg" target="_blank">agrani-app.dotlines.com.sg</a></small></div>
+                                <strong>Agrani Bank Remittance App</strong><br/>
+                                • Developed scalable REST APIs in Laravel for remitter registration, beneficiary handling, and transaction workflows, supporting tens of thousands of active users.<br/>
+                                • Integrated Agrani Bank’s XML/SOAP APIs for core banking data sync and automated updates, cutting manual verification by 30% and integrated the FPX payment gateway.<br/>
+                                • Built a multilingual Vue.js frontend by converting static UI designs into responsive, reusable components, improving load performance by 20%.<br/>
+                                • Implemented push notifications, device binding, OTP verification, and cross-device session sync using Firebase and MQTT, reducing failed logins by 40%.<br/>
+                                • Designed modular backend architecture with service classes, repository pattern, validation layers, and API docs, cutting code duplication by 25%.<br/>
+                                <small class="d-block mt-1"><a class="text-link" href="https://agrani-app.dotlines.com.sg" target="_blank">agrani-app.dotlines.com.sg</a></small>
                             </li>
 
                             <li class="mt-3">
-                                <strong>Laopay (MFS Application)</strong><br/>
-                                <em>May 2025 — Present</em><br/>
-                                Delivered critical improvements and feature work for Laopay mobile wallet and merchant modules. Key achievements include:
-                                <ul>
-                                    <li>Resolved critical bugs and optimised wallet APIs for accuracy — reduced errors by ~30%.</li>
-                                    <li>Implemented real-time communication channels (Firebase, MQTT) and device binding to improve reliability and notifications (<100ms latency at scale).</li>
-                                    <li>Scaled the system to support 50k+ users while improving uptime and performance.</li>
-                                    <li>Automated compliance & onboarding workflows using scheduled jobs and queue-driven SMS/email flows — onboarding effort reduced ~70%.</li>
-                                </ul>
-                                <div class="mt-1"><small>Play Store: <a href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank">Laopay on Google Play</a></small></div>
+                                <strong>Laopay (MFS Application)</strong> — <em>May 2025 - Present</em><br/>
+                                • Resolved critical bugs and optimized wallet APIs, improving accuracy and cutting errors by 30%.<br/>
+                                • Delivered real-time communication—multilingual Vue.js components, device binding, Firebase alerts, and MQTT channels—supporting 50k+ users with &lt;100ms latency.<br/>
+                                • Automated compliance and onboarding workflows with scheduled limit resets, queue-driven SMS flows, and LapNet auto-registration, reducing onboarding effort by 70%.<br/>
+                                <small class="d-block mt-1"><a class="text-link" href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank">Laopay on Google Play</a></small>
                             </li>
 
                             <li class="mt-3">
                                 <strong>Blood Donation App</strong><br/>
-                                Built a full-stack donor management app with Laravel REST APIs and a Capacitor-powered mobile frontend. Features included donor registration, live search, donation history, multilingual support, and admin management with scheduled jobs & notifications.
-                                <div class="mt-1"><small>Demo: <a href="http://45.249.101.49:8093" target="_blank">45.249.101.49:8093</a></small></div>
+                                • Developed a full-stack Blood Donation App using Laravel REST APIs and Vue.js/Capacitor, enabling donor registration, live donor search, and donation history for 1,000+ users, with multilingual support, secure device binding, and 40% improved login reliability.<br/>
+                                • Implemented Firebase push notifications and queued SMS/email alerts, boosting donor–recipient engagement and improving response time by 30%, with seamless authentication and API communication.<br/>
+                                • Built an admin portal and automated system operations—managing donor records, blood stock/events, and verification workflows—and added scheduled cleanup/notification jobs, reducing manual processing by 50% and improving reliability.
                             </li>
 
                             <li class="mt-3">
                                 <strong>Loyalty Program</strong><br/>
-                                Developed onboarding and tier-management modules, automated category updates based on transactions, and integrated notification flows. Built using Laravel Blade for the frontend and clean service-based backend design.
-                                <div class="mt-1"><small>Demo: <a href="http://45.249.101.49:8092/login" target="_blank">45.249.101.49:8092/login</a> — <strong>Username:</strong> michael / <strong>Password:</strong> michael-123</small></div>
+                                • Developed onboarding and management modules for organizations to register and manage loyalty tiers. Automated customer category updates based on transactional behavior and integrated Laravel-based notifications.
                             </li>
                         </ul>
                     </div>
 
+                    <!-- BRAC Bank -->
                     <div>
-                        <h5 class="mb-0">BRAC Bank Limited — Intern, Automation Team</h5>
-                        <div class="small text-muted mb-2">Feb 2023 — May 2023 — Tejgaon, Dhaka</div>
-                        <p class="mb-1"><strong>Role:</strong> Intern (Automation)</p>
-                        <p class="mb-0">Used Python (Selenium, PyAutoGUI) to automate internal banking workflows, built a computer-vision utility to extract passport/ID photos from scanned documents (PDF/TIFF) and reduced manual form-handling time significantly.</p>
+                        <h5 class="mb-1">Intern, Automation Team</h5>
+                        <div class="small-muted mb-2">BRAC Bank Limited — Feb 2023 - May 2023, Tejgaon, Dhaka, Bangladesh</div>
+                        <p class="mb-1"><strong>Key contributions:</strong></p>
+                        <ul class="list-compact">
+                            <li>Automated internal banking workflows using Python, Selenium, and PyAutoGUI, reducing manual form-handling time by 70%.</li>
+                            <li>Built a computer-vision tool to extract passport/ID photos from scanned documents (PDF/TIFF), improving processing speed by 50%.</li>
+                            <li>Supported debugging, testing, and automation handover for production deployment.</li>
+                        </ul>
                     </div>
 
                 </div>
@@ -138,15 +159,15 @@
 
             <!-- Projects -->
             <section class="mb-4">
-                <h5 class="mb-3"><i class="bi bi-folder2-open me-2"></i>Selected Projects</h5>
+                <h5 class="section-title"><i class="bi bi-folder2-open me-2"></i>Project Highlights</h5>
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
-                                <h6 class="card-title">Agrani Bank Remittance App</h6>
-                                <p class="small text-muted mb-2">Remittance platform (MYR → BDT) — Laravel + Vue + Capacitor</p>
-                                <p class="small mb-2">APIs, FPX integration, XML/SOAP sync with bank core, OTP, device binding, automated receipts.</p>
-                                <a href="https://agrani-app.dotlines.com.sg" target="_blank" class="stretched-link">Open demo</a>
+                                <h6 class="card-title-compact">Agrani Bank Remittance App</h6>
+                                <div class="small-muted mb-2">Remittance platform — Laravel, Vue.js, Capacitor</div>
+                                <p class="small mb-2">APIs for remitter registration, beneficiary & transaction flows, FPX integration, XML/SOAP sync with Agrani core systems, OTP & device binding, PDF receipts.</p>
+                                <a class="text-link small" href="https://agrani-app.dotlines.com.sg" target="_blank">Open demo</a>
                             </div>
                         </div>
                     </div>
@@ -154,10 +175,10 @@
                     <div class="col-md-6">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
-                                <h6 class="card-title">Laopay (MFS Application)</h6>
-                                <p class="small text-muted mb-2">Mobile wallet & merchant platform — Laravel backend, real-time channels</p>
-                                <p class="small mb-2">Bug fixes & API optimisations, improved uptime, realtime notifications, onboarding automation; supported 50k+ users.</p>
-                                <a href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank" class="stretched-link">Google Play</a>
+                                <h6 class="card-title-compact">Laopay (MFS Application)</h6>
+                                <div class="small-muted mb-2">Mobile wallet & merchant platform — Laravel backend, realtime channels</div>
+                                <p class="small mb-2">Bug fixes & API optimisations, realtime notifications (MQTT/Firebase), onboarding automation, scaling improvements supporting 50k+ users.</p>
+                                <a class="text-link small" href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank">Google Play</a>
                             </div>
                         </div>
                     </div>
@@ -165,10 +186,9 @@
                     <div class="col-md-6">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
-                                <h6 class="card-title">Blood Donation App</h6>
-                                <p class="small text-muted mb-2">Donor management & search — Laravel + Capacitor</p>
-                                <p class="small mb-2">Donor registration, admin portal, FCM notifications, scheduled jobs.</p>
-                                <a href="http://45.249.101.49:8093" target="_blank" class="stretched-link">Open demo</a>
+                                <h6 class="card-title-compact">Blood Donation App</h6>
+                                <div class="small-muted mb-2">Donor management — Laravel + Capacitor</div>
+                                <p class="small mb-2">Donor registration, live search, admin portal, FCM push notifications, scheduled jobs, multilingual support.</p>
                             </div>
                         </div>
                     </div>
@@ -176,23 +196,25 @@
                     <div class="col-md-6">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
-                                <h6 class="card-title">Loyalty Program</h6>
-                                <p class="small text-muted mb-2">Customer tiers & onboarding automation</p>
-                                <p class="small mb-2">Tier updates based on transaction behaviour, Laravel notification flows, Blade admin UI.</p>
-                                <a href="http://45.249.101.49:8092/login" target="_blank" class="stretched-link">Open demo</a>
+                                <h6 class="card-title-compact">Loyalty Program</h6>
+                                <div class="small-muted mb-2">Customer tier & onboarding automation</div>
+                                <p class="small mb-2">Automated tier updates based on transactions, Laravel Blade admin UI, notification flows, scheduled jobs.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Download CV button -->
-            <div class="d-flex gap-2">
+            <!-- Download & Contact -->
+            <div class="d-flex gap-2 mb-4">
                 <a class="btn btn-outline-primary" href="/_MdMahidulHaque_01705568901.pdf" download>
                     <i class="bi bi-download me-1"></i>Download CV (PDF)
                 </a>
                 <a class="btn btn-primary" href="mailto:mahidul5130@gmail.com">
                     <i class="bi bi-envelope me-1"></i>Contact
+                </a>
+                <a class="btn btn-outline-secondary" href="https://mahidul5130.github.io" target="_blank">
+                    <i class="bi bi-globe2 me-1"></i>Portfolio (GitHub Pages)
                 </a>
             </div>
 
@@ -200,8 +222,6 @@
     </div>
 </div>
 
-<!-- Bootstrap JS (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
