@@ -50,6 +50,33 @@
         footer{margin-top:20px;color:var(--muted);text-align:center;font-size:13px}
         /* small utility */
         .muted-small{color:var(--muted);font-size:13px}
+
+        /* Logo rows for experience & education */
+        .logo-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 14px;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+        .logo-row img {
+            height: 36px;
+            width: auto;
+            opacity: 0.92;
+            transition: 0.18s ease-in-out;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.02);
+            padding: 6px;
+        }
+        .logo-row img:hover {
+            opacity: 1;
+            transform: translateY(-3px) scale(1.04);
+        }
+
+        /* responsive tweaks for logo size */
+        @media (max-width:480px){
+            .logo-row img{height:30px;padding:4px}
+        }
     </style>
 </head>
 <body>
@@ -66,7 +93,7 @@
                 <div class="top-actions" aria-label="Primary links">
                     <!-- GitHub CTA -->
                     <a class="primary" href="https://github.com/mahidul5130" target="_blank" rel="noopener">
-                        <!-- GitHub small icon (image-like SVG) -->
+                        <!-- GitHub small icon -->
                         <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.73.5.85 5.37.85 11.65c0 4.77 3.09 8.81 7.38 10.24.54.1.74-.23.74-.52 0-.26-.01-1-.01-1.92-3 .65-3.64-1.37-3.64-1.37-.49-1.24-1.2-1.57-1.2-1.57-.98-.67.08-.66.08-.66 1.08.08 1.65 1.12 1.65 1.12.96 1.64 2.52 1.17 3.13.9.1-.7.38-1.17.69-1.44-2.4-.27-4.93-1.2-4.93-5.33 0-1.18.42-2.14 1.11-2.9-.11-.27-.48-1.36.11-2.84 0 0 .9-.29 2.95 1.11a10.2 10.2 0 0 1 2.69-.36c.91 0 1.82.12 2.69.36 2.05-1.4 2.95-1.11 2.95-1.11.59 1.48.22 2.57.11 2.84.69.76 1.11 1.72 1.11 2.9 0 4.14-2.54 5.06-4.96 5.33.39.34.73 1.02.73 2.06 0 1.49-.01 2.69-.01 3.06 0 .29.19.63.75.52 4.29-1.43 7.38-5.47 7.38-10.24C23.15 5.37 18.27.5 12 .5z" fill="#081022"/></svg>
                         View GitHub
                     </a>
@@ -97,6 +124,13 @@
 
             <!-- Experience -->
             <div class="card section" id="experience">
+                <!-- Company logo row (order as provided) -->
+                <div class="logo-row" aria-hidden="false">
+                    <img src="logo/company/brac_bank.svg" alt="BRAC Bank" loading="lazy" />
+                    <img src="logo/company/dotlines.svg" alt="Dotlines" loading="lazy" />
+                    <img src="logo/company/ssd-tech.png" alt="SSD-TECH" loading="lazy" />
+                </div>
+
                 <div class="heading"><h2>Experience</h2></div>
                 <div class="exp">
                     <div class="exp-item">
@@ -163,7 +197,7 @@
 
                     <ul style="margin-top:8px">
                         <li>Resolved critical bugs and optimized wallet APIs, improving accuracy and cutting errors by 30%, while integrating wallet/merchant modules that improved uptime by 20%.</li>
-                        <li>Delivered real-time communication—multilingual Vue.js components, device binding, Firebase alerts, and MQTT channels—supporting 50k+ users with <100ms latency.</li>
+                        <li>Delivered real-time communication—multilingual Vue.js components, device binding, Firebase alerts, and MQTT channels—supporting 50k+ users with &lt;100ms latency.</li>
                         <li>Automated compliance and onboarding workflows with scheduled limit resets, queue-driven SMS flows, and LapNet auto-registration, reducing onboarding effort by 70%.</li>
                     </ul>
 
@@ -228,6 +262,13 @@
 
             <!-- Education -->
             <div class="card section" id="education">
+                <!-- Educational institution logos (order as provided) -->
+                <div class="logo-row" aria-hidden="false">
+                    <img src="logo/educational_institution/brac_university.svg" alt="Brac University" loading="lazy" />
+                    <img src="logo/educational_institution/ideal_school_&_college.png" alt="Ideal School & College" loading="lazy" />
+                    <img src="logo/educational_institution/mcpsc.jpg" alt="MCPSC" loading="lazy" />
+                </div>
+
                 <div class="heading"><h2>Education</h2></div>
                 <div class="muted-small">Bachelor of Science in Computer Science and Engineering — Brac University (3.67 / 4.00), Dhaka, Bangladesh, 2022</div>
                 <div class="muted-small" style="margin-top:6px">Higher Secondary Certificate (Science) — Mirpur Cantonment Public School and College (4.83 / 5.00), Dhaka, Bangladesh, 2018</div>
