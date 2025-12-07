@@ -564,38 +564,31 @@
                 <div class="proj">
                     <div class="proj-title">
                         <div>
-                            <div style="font-weight:700"><a
-                                    href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank"
-                                    rel="noopener" style="color:var(--accent);text-decoration:none">Laopay (MFS
-                                Application)</a></div>
-                            <div class="muted-small" style="font-size:13px;margin-top:6px">May 2025 - Present — SSD-TECH
-                                / Dotlines
+                            <div style="font-weight:700">
+                                <a href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">
+                                    Laopay (MFS Application)
+                                </a>
                             </div>
+                            <div class="muted-small" style="font-size:13px;margin-top:6px">May 2024 - Present — SSD-TECH / Dotlines</div>
                         </div>
                         <div>
-                            <div class="techstack"><strong>Tech:</strong> PHP, Laravel, MySQL, Vue.js, Firebase, MQTT,
-                                Redis, Docker
-                            </div>
+                            <div class="techstack"><strong>Tech:</strong> PHP, Laravel, MySQL, Vue.js, Capacitor, MQTT, Firebase, Redis, Docker, JWE (node-jose), qrcode-generator, jsPDF</div>
                         </div>
                     </div>
 
                     <ul style="margin-top:8px">
-                        <li>Resolved critical bugs and optimized wallet APIs, improving accuracy and cutting errors by
-                            30%, while integrating wallet/merchant modules that improved uptime by 20%.
-                        </li>
-                        <li>Delivered real-time communication—multilingual Vue.js components, device binding, Firebase
-                            alerts, and MQTT channels—supporting 50k+ users with <100ms latency.
-                        </li>
-                        <li>Automated compliance and onboarding workflows with scheduled limit resets, queue-driven SMS
-                            flows, and LapNet auto-registration, reducing onboarding effort by 70%.
-                        </li>
+                        <li>Maintained and enhanced a production mobile-first MFS (mobile financial services) app (Android / iOS via Capacitor + Vue) used for wallet, merchant, and agent operations.</li>
+                        <li>Implemented and supported **LapNet EMV QR flows** — static & dynamic QR generation, CRC/EMV assembly and validation, and server-side verification endpoints used by the mobile app (e.g. `lapnet/registration-check`, `lapnet/generateQR`).</li>
+                        <li>Built robust transaction APIs in Laravel that integrate with core banking / settlement systems (CBS/JDB) and ensure reliable auditing, queuing, and reconciliation. Important endpoints include transaction creation, merchant collect/download (`collect-download`), and statement APIs.</li>
+                        <li>Implemented secure end-to-end payload encryption using **JWE** (node-jose on client; server-side JWE decryption), and OAuth refresh flows for session management (frontend axios interceptors handle encrypted payloads and token refresh).</li>
+                        <li>Added offline / real-time features: device binding + session persistence, push notifications via Firebase, and low-latency pub/sub with MQTT for in-app real-time events (transaction updates, alerts).</li>
+                        <li>Frontend utilities: QR rendering (qrcode-generator), HTML → PDF downloads (html2canvas + jsPDF), server-side PDF storage & download link generation, and friendly error/notification flows.</li>
+                        <li>Operational improvements: modular service classes, Traits for repeated logic (LapNet / Transaction), background Jobs for signature verification and notifications, and Dockerized local dev for reproducible environments.</li>
                     </ul>
 
                     <div class="btn-row">
-                        <a class="icon-btn play" href="https://play.google.com/store/apps/details?id=app.laopay"
-                           target="_blank" rel="noopener">
-                            <img src="https://img.icons8.com/fluency/48/google-play-store-new.png" class="icon"
-                                 alt="Play Store"/>
+                        <a class="icon-btn play" href="https://play.google.com/store/apps/details?id=app.laopay" target="_blank" rel="noopener">
+                            <img src="https://img.icons8.com/fluency/48/google-play-store-new.png" class="icon" alt="Play Store"/>
                             View on Play Store
                         </a>
                     </div>
