@@ -32,8 +32,8 @@ export const experience = [
     company: "Systems Solutions & Development Technologies (SSD-TECH) / Dotlines",
     period: "June 2023 - Present",
     logos: [
-      { src: "logo/company/ssd-tech.png", alt: "SSD-TECH logo" },
-      { src: "logo/company/dotlines.svg", alt: "Dotlines logo" },
+      { src: "/logo/company/ssd-tech.png", alt: "SSD-TECH logo" },
+      { src: "/logo/company/dotlines.svg", alt: "Dotlines logo" },
     ],
     points: [
       "Developed and maintained 3+ production Laravel/Vue applications across API design, queues, schedulers, admin operations, and third-party integrations.",
@@ -47,7 +47,7 @@ export const experience = [
     company: "BRAC Bank Limited",
     period: "February 2023 - May 2023",
     logos: [
-      { src: "logo/company/brac_bank.svg", alt: "BRAC Bank logo" },
+      { src: "/logo/company/brac_bank.svg", alt: "BRAC Bank logo" },
     ],
     points: [
       "Automated internal banking workflows with Python, Selenium, and PyAutoGUI, reducing manual processing time by about 70%.",
