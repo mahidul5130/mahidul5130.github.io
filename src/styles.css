@@ -66,10 +66,6 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
-[v-cloak] {
-    display: none;
-}
-
 .skip-link {
     position: absolute;
     left: 16px;
@@ -744,9 +740,9 @@ li + li {
     }
 
     h1 {
+        max-width: min(100%, 330px);
         font-size: 30px;
         line-height: 1.12;
-        max-width: min(100%, 330px);
     }
 
     h2 {
@@ -754,13 +750,13 @@ li + li {
     }
 
     .lead {
-        font-size: 16px;
         max-width: min(100%, 330px);
+        font-size: 16px;
     }
 
     .eyebrow {
-        font-size: 12px;
         max-width: min(100%, 330px);
+        font-size: 12px;
     }
 
     .portrait-frame img {
