@@ -34,7 +34,7 @@ const copyRecursive = (source, target) => {
 };
 
 if (!fs.existsSync(path.join(dist, "index.html"))) {
-  throw new Error("dist/index.html was not found. Run vue-cli-service build first.");
+  throw new Error("dist/index.html was not found. Run vite build first.");
 }
 
 removePath(path.join(root, "assets"));
@@ -46,4 +46,4 @@ for (const entry of fs.readdirSync(dist)) {
   copyRecursive(path.join(dist, entry), path.join(root, entry));
 }
 
-console.log("Published Vue CLI build output to repository root for GitHub Pages.");
+console.log("Published Vite build output to repository root for GitHub Pages.");

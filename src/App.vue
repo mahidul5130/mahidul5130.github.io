@@ -41,7 +41,7 @@
 
         <div class="hero-visual" aria-label="Profile and career proof">
           <figure class="portrait-frame">
-            <img src="profile-portfolio.jpg" width="900" height="1125" alt="Md. Mahidul Haque">
+            <img :src="profilePhoto" width="900" height="1125" alt="Md. Mahidul Haque">
           </figure>
 
           <div class="signal-board">
@@ -218,6 +218,7 @@ import {
   stats,
   workModes,
 } from "./portfolio-data";
+import profilePhoto from "../profile-portfolio.jpg";
 
 export default {
   name: "App",
@@ -229,6 +230,7 @@ export default {
       experience,
       heroSignals,
       navLinks,
+      profilePhoto,
       projects,
       skillGroups,
       stats,
