@@ -493,11 +493,13 @@ h3 {
     position: relative;
     z-index: 2;
     width: min(380px, 100%);
+    aspect-ratio: 4 / 5;
     margin: 0;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.88);
     border-radius: var(--radius);
-    background: var(--surface-solid);
+    background:
+        linear-gradient(145deg, rgba(232, 246, 241, 0.96), rgba(255, 245, 230, 0.9));
     box-shadow: var(--shadow-hover);
     transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
     transform-style: preserve-3d;
@@ -528,10 +530,9 @@ h3 {
 
 .portrait-frame img {
     width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center 64%;
-    transform: scale(1.02);
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
 }
 
 .hero-code-card {
@@ -756,6 +757,15 @@ h3 {
     max-height: 72px;
     object-fit: contain;
     filter: saturate(1.05) contrast(1.03);
+}
+
+.company-logos img[src*="dotlines.svg"] {
+    box-sizing: content-box;
+    max-width: 104px;
+    max-height: 24px;
+    border-radius: var(--radius);
+    background: #111827;
+    padding: 9px 11px;
 }
 
 .item-head {

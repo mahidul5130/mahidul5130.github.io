@@ -16,9 +16,17 @@
           <Phone :size="18" />
           +8801705568901
         </a>
+        <a href="https://wa.me/8801705568901" target="_blank" rel="noopener">
+          <MessageCircle :size="18" />
+          WhatsApp
+        </a>
         <a href="https://www.linkedin.com/in/md-mahidul-haque" target="_blank" rel="noopener">
           <Linkedin :size="18" />
           LinkedIn
+        </a>
+        <a href="https://www.facebook.com/mahidulhaque.shezan/" target="_blank" rel="noopener">
+          <Facebook :size="18" />
+          Facebook
         </a>
         <a href="https://github.com/mahidul5130" target="_blank" rel="noopener">
           <Github :size="18" />
@@ -34,5 +42,5 @@
 </template>
 
 <script setup>
-import { Download, Github, Linkedin, Mail, Phone } from "lucide-vue-next";
+import { Download, Facebook, Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-vue-next";
 </script>

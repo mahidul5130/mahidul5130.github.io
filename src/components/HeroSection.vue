@@ -24,9 +24,17 @@
             <Mail :size="18" />
             Email
           </a>
+          <a class="button ghost" href="https://wa.me/8801705568901" target="_blank" rel="noopener">
+            <MessageCircle :size="18" />
+            WhatsApp
+          </a>
           <a class="button ghost" href="https://www.linkedin.com/in/md-mahidul-haque" target="_blank" rel="noopener">
             <Linkedin :size="18" />
             LinkedIn
+          </a>
+          <a class="button ghost" href="https://www.facebook.com/mahidulhaque.shezan/" target="_blank" rel="noopener">
+            <Facebook :size="18" />
+            Facebook
           </a>
           <a class="button ghost" href="https://github.com/mahidul5130" target="_blank" rel="noopener">
             <Github :size="18" />
@@ -51,7 +59,7 @@
       >
         <div class="kinetic-ring" aria-hidden="true"></div>
         <figure class="portrait-frame">
-          <img src="/profile.png" width="900" height="1125" alt="Md. Mahidul Haque">
+          <img src="/profile.png" width="1024" height="1329" alt="Md. Mahidul Haque">
         </figure>
 
         <div class="hero-code-card" aria-hidden="true">
@@ -79,11 +87,13 @@ import {
   BriefcaseBusiness,
   CreditCard,
   Download,
+  Facebook,
   Github,
   Globe2,
   Linkedin,
   Mail,
   MapPin,
+  MessageCircle,
   Plane,
   Radio,
   ServerCog,
