@@ -16,21 +16,25 @@
           <Phone :size="18" />
           +8801705568901
         </a>
-        <a href="https://wa.me/8801705568901" target="_blank" rel="noopener">
+        <a href="https://wa.me/8801705568901" target="_blank" rel="noopener noreferrer">
           <MessageCircle :size="18" />
           WhatsApp
         </a>
-        <a href="https://www.linkedin.com/in/md-mahidul-haque" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/md-mahidul-haque" target="_blank" rel="me noopener noreferrer">
           <Linkedin :size="18" />
           LinkedIn
         </a>
-        <a href="https://www.facebook.com/mahidulhaque.shezan/" target="_blank" rel="noopener">
+        <a href="https://www.facebook.com/mahidulhaque.shezan/" target="_blank" rel="me noopener noreferrer">
           <Facebook :size="18" />
           Facebook
         </a>
-        <a href="https://github.com/mahidul5130" target="_blank" rel="noopener">
+        <a href="https://github.com/mahidul5130" target="_blank" rel="me noopener noreferrer">
           <Github :size="18" />
           GitHub
+        </a>
+        <a href="/resume.html">
+          <FileText :size="18" />
+          Resume page
         </a>
         <a href="/Md_Mahidul_Haque_Laravel_Vue_CV.pdf">
           <Download :size="18" />
@@ -42,5 +46,5 @@
 </template>
 
 <script setup>
-import { Download, Facebook, Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-vue-next";
+import { Download, Facebook, FileText, Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-vue-next";
 </script>

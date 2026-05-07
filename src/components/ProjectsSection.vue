@@ -65,7 +65,7 @@
             </ul>
 
             <div class="project-links" v-if="project.links.length">
-              <a v-for="link in project.links" :key="link.href" :href="link.href" target="_blank" rel="noopener">
+              <a v-for="link in project.links" :key="link.href" :href="link.href" target="_blank" rel="noopener noreferrer">
                 {{ link.label }}
                 <ExternalLink :size="15" />
               </a>

@@ -14,7 +14,14 @@
           :style="{ '--reveal-delay': `${index * 90}ms` }"
         >
           <div class="company-logos" v-if="role.logos.length">
-            <img v-for="logo in role.logos" :key="logo.src" :src="logo.src" :alt="logo.alt">
+            <img
+              v-for="logo in role.logos"
+              :key="logo.src"
+              :src="logo.src"
+              :alt="logo.alt"
+              loading="lazy"
+              decoding="async"
+            >
           </div>
 
           <div class="experience-body">
