@@ -951,7 +951,6 @@ h3 {
     background: rgba(255, 255, 255, 0.84);
     padding: 22px;
     box-shadow: var(--shadow);
-    outline: none;
     backdrop-filter: blur(16px);
     transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease, filter 220ms ease;
 }
@@ -964,12 +963,14 @@ h3 {
     background: var(--accent);
 }
 
-.project-card:hover,
-.project-card:focus,
 .project-card.featured {
     border-color: color-mix(in srgb, var(--accent) 48%, transparent);
     box-shadow: var(--shadow-hover);
-    transform: translateY(-5px);
+}
+
+.project-card:hover {
+    border-color: rgba(17, 24, 39, 0.18);
+    box-shadow: var(--shadow);
 }
 
 .project-card.muted {
@@ -983,11 +984,9 @@ h3 {
     opacity: 0.38;
 }
 
-.project-card.muted:hover,
-.project-card.muted:focus {
+.project-card.muted:hover {
     border-color: rgba(17, 24, 39, 0.16);
-    box-shadow: var(--shadow);
-    transform: translateY(-2px);
+    box-shadow: 0 14px 42px rgba(17, 24, 39, 0.08);
 }
 
 .project-topline {

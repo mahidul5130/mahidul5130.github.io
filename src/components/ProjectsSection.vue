@@ -44,9 +44,6 @@
               muted: isProjectMuted(project),
             }"
             :style="{ '--accent': project.accent, '--reveal-delay': `${index * 70}ms` }"
-            tabindex="0"
-            @focusin="highlight(project)"
-            @mouseenter="highlight(project)"
           >
             <div class="project-topline">
               <span>
@@ -116,14 +113,6 @@ const highlightedProject = computed(() => (
 const setCategory = (category) => {
   activeCategory.value = category;
   highlightedTitle.value = filteredProjects.value[0]?.title || props.projects[0]?.title || "";
-};
-
-const highlight = (project) => {
-  if (isProjectMuted(project)) {
-    return;
-  }
-
-  highlightedTitle.value = project.title;
 };
 
 const isProjectMuted = (project) => activeCategory.value !== "All" && project.category !== activeCategory.value;
