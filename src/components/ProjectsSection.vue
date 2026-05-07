@@ -37,9 +37,12 @@
         <div class="project-grid">
           <article
             class="project-card reveal"
-            v-for="(project, index) in filteredProjects"
+            v-for="(project, index) in projects"
             :key="project.title"
-            :class="{ featured: highlightedProject.title === project.title }"
+            :class="{
+              featured: highlightedProject.title === project.title,
+              muted: isProjectMuted(project),
+            }"
             :style="{ '--accent': project.accent, '--reveal-delay': `${index * 70}ms` }"
             tabindex="0"
             @focusin="highlight(project)"
@@ -116,8 +119,14 @@ const setCategory = (category) => {
 };
 
 const highlight = (project) => {
+  if (isProjectMuted(project)) {
+    return;
+  }
+
   highlightedTitle.value = project.title;
 };
+
+const isProjectMuted = (project) => activeCategory.value !== "All" && project.category !== activeCategory.value;
 
 const stackItems = (project) => project.stack.split(",").map((item) => item.trim()).filter(Boolean);
 </script>

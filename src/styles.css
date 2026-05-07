@@ -953,7 +953,7 @@ h3 {
     box-shadow: var(--shadow);
     outline: none;
     backdrop-filter: blur(16px);
-    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease, filter 220ms ease;
 }
 
 .project-card::before {
@@ -964,16 +964,6 @@ h3 {
     background: var(--accent);
 }
 
-.project-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.66), transparent);
-    transform: translateX(-120%);
-    transition: transform 620ms ease;
-    pointer-events: none;
-}
-
 .project-card:hover,
 .project-card:focus,
 .project-card.featured {
@@ -982,10 +972,22 @@ h3 {
     transform: translateY(-5px);
 }
 
-.project-card:hover::after,
-.project-card:focus::after,
-.project-card.featured::after {
-    transform: translateX(120%);
+.project-card.muted {
+    border-color: rgba(17, 24, 39, 0.08);
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0 14px 42px rgba(17, 24, 39, 0.08);
+    filter: saturate(0.74);
+}
+
+.project-card.muted::before {
+    opacity: 0.38;
+}
+
+.project-card.muted:hover,
+.project-card.muted:focus {
+    border-color: rgba(17, 24, 39, 0.16);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
 }
 
 .project-topline {
