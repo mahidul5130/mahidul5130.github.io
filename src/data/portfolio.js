@@ -14,7 +14,7 @@ export const availability = [
 ];
 
 export const heroSignals = [
-  { value: "3+", label: "years shipping Laravel systems" },
+  { value: "3.5+", label: "years shipping Laravel systems" },
   { value: "50k+", label: "users supported in payment flows" },
   { value: "4", label: "production domains covered" },
 ];
@@ -36,7 +36,7 @@ export const experience = [
       { src: "/logo/company/dotlines.svg", alt: "Dotlines logo" },
     ],
     points: [
-      "Developed and maintained 3+ production Laravel/Vue applications across API design, queues, schedulers, admin operations, and third-party integrations.",
+      "Developed and maintained 5+ production Laravel/Vue applications across API design, queues, schedulers, admin operations, and third-party integrations.",
       "Improved 5+ existing systems through bug fixes, performance tuning, secure workflow updates, module delivery, and production support.",
       "Built secure Laravel APIs with validation, middleware, policy-based authorization, Passport/OAuth, service layers, and reusable architecture patterns.",
       "Implemented real-time updates, push notifications, device binding, OTP flows, Firebase, MQTT, Redis queues, and event-driven workflows.",
@@ -63,7 +63,7 @@ export const projects = [
     category: "Fintech",
     type: "Banking and remittance",
     period: "May 2024 - Present",
-    stack: "Laravel REST API, Vue.js, MySQL, Redis, Firebase, MQTT, XML/SOAP, FPX",
+    stack: "Laravel REST API, Vue.js, Capacitor, MySQL, Redis, Firebase, MQTT, XML/SOAP, FPX",
     accent: "#0f766e",
     links: [
       { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.agranibank.app.malaysia" },
@@ -72,6 +72,7 @@ export const projects = [
       "Built Laravel APIs for remitter registration, beneficiary management, transaction workflows, OTP verification, device binding, and notifications.",
       "Integrated Agrani Bank XML/SOAP services for core banking data synchronization and transaction updates.",
       "Implemented FPX payment gateway workflows and multilingual Vue.js screens connected to production APIs.",
+      "Built Android APK delivery using Capacitor.",
     ],
   },
   {
@@ -79,7 +80,7 @@ export const projects = [
     category: "Fintech",
     type: "Payments and wallet",
     period: "July 2025 - Present",
-    stack: "Laravel API, wallet flows, QR payments, OAuth, Redis queues, Firebase, MQTT",
+    stack: "Laravel REST API, Vue.js, Capacitor, wallet flows, QR payments, OAuth, MySQL, Redis queues, Firebase, MQTT",
     accent: "#2456a6",
     links: [
       { label: "Google Play", href: "https://play.google.com/store/apps/details?id=app.laopay" },
@@ -87,6 +88,7 @@ export const projects = [
     points: [
       "Fixed wallet and merchant transaction logic, balance calculations, onboarding issues, and production payment edge cases for a 50k+ user system.",
       "Implemented EMV QR payment workflows including static QR, variable-amount QR, CRC validation, receipt generation, and encrypted API communication.",
+      "Built Vue.js mobile app screens and Android APK delivery using Capacitor.",
       "Automated onboarding, notification, retry, and operational workflows using Redis queues, Firebase, and MQTT.",
     ],
   },
@@ -134,6 +136,7 @@ export const projects = [
     ],
     points: [
       "Built donor registration, live donor search, multilingual UI, secure API communication, and mobile-friendly workflows.",
+      "Built Android APK delivery using Capacitor.",
       "Added geolocation-aware search, Firebase push notifications, queued SMS/email alerts, and admin-side donor management.",
     ],
   },
