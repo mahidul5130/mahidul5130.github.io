@@ -16,13 +16,13 @@ export const availability = [
 export const heroSignals = [
   { value: "3.5+", label: "years shipping Laravel systems" },
   { value: "50k+", label: "users supported in payment flows" },
-  { value: "4", label: "production domains covered" },
+  { value: "5", label: "production domains covered" },
 ];
 
 export const stats = [
   { value: "Laravel", label: "APIs, queues, schedulers, admin panels" },
   { value: "Vue.js", label: "frontend delivery and reusable UI" },
-  { value: "Payments", label: "FPX, wallets, QR, OAuth, notifications" },
+  { value: "Integrations", label: "FPX, wallets, QR, TNG, flight APIs" },
   { value: "Hotels", label: "SEO, booking, analytics, conversion flows" },
 ];
 
@@ -73,6 +73,22 @@ export const projects = [
       "Integrated Agrani Bank XML/SOAP services for core banking data synchronization and transaction updates.",
       "Implemented FPX payment gateway workflows and multilingual Vue.js screens connected to production APIs.",
       "Built Android APK delivery using Capacitor.",
+    ],
+  },
+  {
+    title: "TNG Malaysia Air Ticket Mini Program API",
+    category: "Travel",
+    type: "Air ticket API",
+    period: "April 2026 - Present",
+    stack: "Laravel REST API, MySQL, Redis, SkyHome/Octatrip APIs, TNG mini program context",
+    accent: "#006b5b",
+    links: [
+      { label: "play.google.com/store/apps/details?id=my.com.tngdigital.ewallet", href: "https://play.google.com/store/apps/details?id=my.com.tngdigital.ewallet" },
+    ],
+    points: [
+      "Developed Laravel air ticket APIs for flight search, fare validation, booking, passenger data, payment handoff, and ticket issue workflows.",
+      "Integrated SkyHome/Octatrip flight provider APIs with service classes, provider abstraction, DTO-style response normalization, validation, and safe logging.",
+      "Verified backend contracts against the TNG Malaysia mini-program flow for request/response compatibility, payment status handling, and ticket delivery behavior.",
     ],
   },
   {
@@ -157,7 +173,7 @@ export const skillGroups = [
   },
   {
     title: "Payments and integrations",
-    items: ["XML/SOAP", "FPX", "QR payments", "OAuth", "Firebase", "MQTT", "PDF generation", "Email/SMS workflows", "Queues"],
+    items: ["XML/SOAP", "FPX", "QR payments", "TNG mini program", "SkyHome/Octatrip", "OAuth", "Firebase", "MQTT", "PDF generation", "Email/SMS workflows", "Queues"],
   },
 ];
 

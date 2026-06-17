@@ -122,7 +122,7 @@
     <style>
         @page {
             size: A4;
-            margin: 10mm 10mm;
+            margin: 8mm 9mm;
         }
 
         * {
@@ -134,8 +134,8 @@
             color: #111827;
             background: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 9.85px;
-            line-height: 1.27;
+            font-size: 9.35px;
+            line-height: 1.2;
             letter-spacing: 0;
         }
 
@@ -152,23 +152,23 @@
         }
 
         h1 {
-            font-size: 23px;
+            font-size: 22px;
             line-height: 1.05;
             text-align: center;
             color: #0f172a;
         }
 
         .headline {
-            margin-top: 3px;
+            margin-top: 2px;
             text-align: center;
-            font-size: 11px;
+            font-size: 10.6px;
             font-weight: 700;
         }
 
         .contact {
-            margin-top: 4px;
+            margin-top: 3px;
             text-align: center;
-            font-size: 9.2px;
+            font-size: 8.95px;
             color: #374151;
         }
 
@@ -178,20 +178,20 @@
         }
 
         section {
-            margin-top: 8px;
+            margin-top: 6px;
         }
 
         h2 {
-            padding-bottom: 2px;
+            padding-bottom: 1px;
             border-bottom: 1px solid #111827;
-            font-size: 12px;
+            font-size: 11.5px;
             line-height: 1.1;
             color: #0f172a;
             text-transform: uppercase;
         }
 
         h3 {
-            font-size: 10.8px;
+            font-size: 10.4px;
             line-height: 1.15;
             color: #111827;
         }
@@ -203,7 +203,7 @@
         .role,
         .project,
         .school {
-            margin-top: 5px;
+            margin-top: 4px;
         }
 
         .row {
@@ -216,23 +216,23 @@
         .row .right {
             white-space: nowrap;
             color: #374151;
-            font-size: 9.2px;
+            font-size: 8.95px;
             text-align: right;
         }
 
         .meta {
             margin-top: 1px;
             color: #374151;
-            font-size: 9.2px;
+            font-size: 8.95px;
         }
 
         ul {
-            margin: 3px 0 0 14px;
+            margin: 2px 0 0 13px;
             padding: 0;
         }
 
         li {
-            margin-top: 1px;
+            margin-top: 0;
             padding-left: 1px;
         }
 
@@ -253,7 +253,7 @@
         .note {
             margin-top: 4px;
             color: #374151;
-            font-size: 9.4px;
+            font-size: 9px;
         }
 
         @media screen {
@@ -284,7 +284,7 @@
 
     <section>
         <h2>Summary</h2>
-        <p class="summary">Full-Stack Software Engineer with 3.5+ years of experience building production Laravel applications, REST APIs, Vue.js interfaces, admin panels, queues, schedulers, and third-party integrations. Strong in backend architecture, payment workflows, banking/MFS systems, client-facing web platforms, team collaboration, Git-based delivery, API documentation, debugging, release support, and async handoff for remote, hybrid, and on-site teams.</p>
+        <p class="summary">Full-Stack Software Engineer with 3.5+ years of experience building production Laravel applications, REST APIs, Vue.js interfaces, admin panels, queues, schedulers, and third-party integrations. Strong in backend architecture, payment workflows, banking/MFS systems, air ticket APIs, client-facing web platforms, team collaboration, Git-based delivery, API documentation, debugging, release support, and async handoff for remote, hybrid, and on-site teams.</p>
     </section>
 
     <section>
@@ -293,7 +293,7 @@
             <p><span class="label">Backend:</span> PHP, Laravel, REST API design, Passport, Sanctum, middleware, validation, policies, service classes, repository pattern, Laravel queues, workers, scheduler, event listeners</p>
             <p><span class="label">Frontend:</span> Vue.js, Vue Router, Vuex, TypeScript, JavaScript, Blade, Vite, responsive UI, reusable components, Capacitor</p>
             <p><span class="label">Database and DevOps:</span> MySQL, query optimization, indexing, Redis, Docker, Git, GitHub, Composer, npm, Postman</p>
-            <p><span class="label">Integrations:</span> XML/SOAP banking APIs, FPX payment gateway, QR payments, OAuth, Firebase Cloud Messaging, MQTT, PDF generation, email/SMS workflows</p>
+            <p><span class="label">Integrations:</span> XML/SOAP banking APIs, FPX payment gateway, QR payments, TNG mini program context, SkyHome/Octatrip flight APIs, OAuth, Firebase Cloud Messaging, MQTT, email/SMS workflows</p>
             <p><span class="label">Testing and Delivery:</span> PHPUnit, API testing, logging, debugging, production issue triage, documentation, release support, team and remote collaboration</p>
         </div>
     </section>
@@ -341,6 +341,20 @@
                 <li>Integrated Agrani Bank XML/SOAP services for core banking data synchronization and implemented FPX payment gateway workflows.</li>
                 <li>Developed multilingual Vue.js interfaces and improved maintainability with service classes, repository pattern, validation layers, logging, and API documentation.</li>
                 <li>Built Android APK delivery using Capacitor.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="row">
+                <h3>TNG Malaysia Air Ticket Mini Program API</h3>
+                <span class="right">April 2026 - Present</span>
+            </div>
+            <p class="meta">Laravel REST API, MySQL, Redis, SkyHome/Octatrip APIs, TNG mini program context</p>
+            <p class="meta">Link: play.google.com/store/apps/details?id=my.com.tngdigital.ewallet</p>
+            <ul>
+                <li>Developed Laravel air ticket APIs for flight search, fare validation, booking, passenger data, payment handoff, and ticket issue workflows.</li>
+                <li>Integrated SkyHome/Octatrip provider APIs with service classes, provider abstraction, DTO-style response normalization, validation, and safe logging.</li>
+                <li>Verified backend contracts against the TNG Malaysia mini-program flow for request/response compatibility, payment status handling, and ticket delivery behavior.</li>
             </ul>
         </div>
 

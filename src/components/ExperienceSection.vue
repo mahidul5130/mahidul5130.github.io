@@ -3,7 +3,7 @@
     <div class="shell">
       <div class="section-heading reveal">
         <p class="section-kicker">Experience</p>
-        <h2>Production engineering across banking, payments, hospitality, APIs, and automation.</h2>
+        <h2>Production engineering across banking, payments, travel, hospitality, APIs, and automation.</h2>
       </div>
 
       <div class="experience-grid">

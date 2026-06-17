@@ -6,7 +6,7 @@
         <h2>Backend ownership with enough frontend range to ship the full workflow.</h2>
         <p class="section-note">
           Best fit: Laravel backend, Laravel/Vue full-stack, REST API/platform engineering,
-          fintech/payment systems, admin panels, and client-facing web products.
+          fintech/payment systems, travel APIs, admin panels, and client-facing web products.
         </p>
       </div>
 

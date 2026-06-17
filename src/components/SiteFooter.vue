@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="shell">
       <span>&copy; {{ currentYear }} Md. Mahidul Haque.</span>
-      <span>Laravel, Vue.js, APIs, payments, and practical product delivery.</span>
+      <span>Laravel, Vue.js, APIs, payments, travel integrations, and practical product delivery.</span>
     </div>
   </footer>
 </template>
